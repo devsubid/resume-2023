@@ -10,7 +10,10 @@ const GlobalStyle = createGlobalStyle`
     --secondary-color: 0, 122, 163;
     overflow-x: hidden;
   }
-  *{
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+  * {
     font-family: var(--font-poppins);
     margin: 0;
     padding: 0;
@@ -29,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
     margin-inline: auto;
     width: min(90%, 70rem);
   }
-  a{
+  a {
     color: inherit;
     text-decoration: none;
   }
