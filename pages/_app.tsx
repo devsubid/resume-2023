@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
     --dark-color: 49, 49, 49;
     --primary-color: 251, 195, 27;
     --secondary-color: 0, 122, 163;
+    overflow-x: hidden;
   }
   *{
     font-family: var(--font-poppins);
