@@ -2,6 +2,9 @@ import Head from "next/head";
 import styled, { keyframes } from "styled-components";
 import Image from "next/image";
 import profile from "../public/profile.jpg";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { MdLocationOn, MdMail } from "react-icons/md";
+import { BsFillPhoneFill } from "react-icons/bs";
 
 const animateBefore = keyframes`
     0%,100% {
@@ -87,6 +90,7 @@ const Main = styled.main`
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    gap: 0.5rem;
     & aside {
       display: flex;
       flex-direction: column;
@@ -107,6 +111,7 @@ const Main = styled.main`
         padding: 0.5rem;
         border-radius: 0.5rem;
         margin-bottom: 0.25rem;
+        transition: all 0.2s ease-in-out;
         &:hover {
           background-color: rgb(var(--secondary-color), 0.1);
         }
@@ -133,8 +138,17 @@ const Main = styled.main`
           color: rgb(var(--dark-color), 0.75);
           padding: 0.5rem;
           border-radius: 0.5rem;
+          transition: all 0.2s ease-in-out;
           &:hover {
             background-color: rgb(var(--primary-color), 0.1);
+          }
+          & a {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            & svg {
+              font-size: 1.25rem;
+            }
           }
         }
       }
@@ -159,6 +173,7 @@ const Main = styled.main`
         padding: 0.5rem;
         border-radius: 0.5rem;
         margin-bottom: 1rem;
+        transition: all 0.2s ease-in-out;
         &:hover {
           background-color: rgb(var(--secondary-color), 0.1);
         }
@@ -189,6 +204,7 @@ const Main = styled.main`
             & h3 {
               padding: 0.5rem;
               border-radius: 0.5rem;
+              transition: all 0.2s ease-in-out;
               &:hover {
                 background-color: rgb(var(--primary-color), 0.1);
               }
@@ -237,7 +253,13 @@ export default function Home() {
       </Head>
       <Main>
         <div className="top container">
-          <Image src={profile} width={200} height={200} alt="" />
+          <Image
+            src={profile}
+            width={200}
+            height={200}
+            draggable="false"
+            alt=""
+          />
           <div className="dev">
             <h1>SUBID DAS</h1>
             <h2>Full-Stack Web Developer</h2>
@@ -256,20 +278,33 @@ export default function Home() {
               <h2>Contact</h2>
               <ul>
                 <li>
-                  <a href="mailto:itsmesubid@gmail.com">itsmesubid@gmail.com</a>
+                  <a href="mailto:itsmesubid@gmail.com">
+                    <MdMail />
+                    <span>itsmesubid@gmail.com</span>
+                  </a>
                 </li>
                 <li>
-                  <a href="tele:+918902175210">+91 890 217 5210</a>
+                  <a href="tele:+918902175210">
+                    <BsFillPhoneFill />
+                    <span>+91 890 217 5210</span>
+                  </a>
                 </li>
-                <li>Kolkata, West Bengal, India</li>
+                <li>
+                  <a>
+                    <MdLocationOn />
+                    <span>Kolkata, West Bengal, India</span>
+                  </a>
+                </li>
                 <li>
                   <a href="https://github.com/itsme-Subid">
-                    github.com/itsme-Subid
+                    <FaGithub />
+                    <span>github.com/itsme-Subid</span>
                   </a>
                 </li>
                 <li>
                   <a href="https://linkedin.com/in/itsme-subid">
-                    linkedin.com/in/itsme-subid
+                    <FaLinkedin />
+                    <span>linkedin.com/in/itsme-subid</span>
                   </a>
                 </li>
               </ul>
