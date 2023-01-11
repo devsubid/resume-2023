@@ -25,13 +25,13 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100vh;
   }
   .container {
-  margin-inline: auto;
-  width: min(90%, 70rem);
-}
-a{
-  color: inherit;
-  text-decoration: none;
-}
+    margin-inline: auto;
+    width: min(90%, 70rem);
+  }
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
 `;
 
 const poppins = Poppins({

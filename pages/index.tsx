@@ -1,7 +1,24 @@
 import Head from "next/head";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Image from "next/image";
 import profile from "../public/profile.jpg";
+
+const animateBefore = keyframes`
+    0%,100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(100vh);
+    }
+`;
+const animateAfter = keyframes`
+    0%,100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-100vh);
+    }
+`;
 
 const Main = styled.main`
   display: flex;
@@ -18,14 +35,52 @@ const Main = styled.main`
       object-fit: cover;
       object-position: center;
       border-radius: 50%;
+      box-shadow: 0 -0.25rem 0.5rem rgba(var(--dark-color), 0.25);
     }
     & h1 {
       color: rgb(var(--dark-color));
+      text-shadow: 0 0.1rem 0.25rem rgba(var(--dark-color), 0.25);
     }
     & h2 {
       color: rgb(var(--primary-color));
       font-weight: 600;
       font-size: 1.5rem;
+      text-shadow: 0 0.1rem 0.25rem rgba(var(--primary-color), 0.25);
+    }
+    & p {
+      color: rgb(var(--dark-color), 0.75);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: -20rem;
+      left: -10rem;
+      width: 40rem;
+      height: 40rem;
+      border-radius: 50%;
+      background: radial-gradient(
+        rgba(var(--primary-color), 0.175),
+        transparent,
+        transparent
+      );
+      animation: ${animateBefore} 15s infinite;
+      z-index: -1;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -20rem;
+      right: -10rem;
+      width: 40rem;
+      height: 40rem;
+      border-radius: 50%;
+      background: radial-gradient(
+        rgba(var(--secondary-color), 0.175),
+        transparent,
+        transparent
+      );
+      animation: ${animateAfter} 15s infinite;
+      z-index: -1;
     }
   }
   & .body-content {
@@ -45,6 +100,7 @@ const Main = styled.main`
       & h2 {
         position: relative;
         color: rgb(var(--secondary-color));
+        text-shadow: 0 0.1rem 0.25rem rgba(var(--secondary-color), 0.25);
         font-weight: 600;
         font-size: 1.25rem;
         width: 100%;
@@ -96,6 +152,7 @@ const Main = styled.main`
       & h2 {
         position: relative;
         color: rgb(var(--secondary-color));
+        text-shadow: 0 0.1rem 0.25rem rgba(var(--secondary-color), 0.25);
         font-weight: 600;
         font-size: 1.25rem;
         width: 100%;
