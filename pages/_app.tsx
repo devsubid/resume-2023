@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
     outline: none;
   }
   body {
-    margin-block: 4rem;
+    padding-block: 4rem;
     background-color: rgb(var(--light-color));
     color: rgb(var(--dark-color));
     overflow-x: hidden;
