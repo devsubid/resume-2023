@@ -27,6 +27,9 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     scroll-behavior: smooth;
     min-height: 100vh;
+    @media screen and (max-width: 40rem) {
+      padding-block: 2rem;
+    }
   }
   .container {
     margin-inline: auto;
