@@ -5,7 +5,6 @@ import profile from "../public/profile.jpg";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdLocationOn, MdMail } from "react-icons/md";
 import { BsFillPhoneFill } from "react-icons/bs";
-import ogImage from "../public/og.webp";
 
 const animateBefore = keyframes`
     0%,100% {
@@ -248,7 +247,7 @@ const og = {
   describedTitle: "RESUME of SUBID DAS",
   discription:
     "Resume-2023 is a visually stunning resume website built using Next.js, TypeScript, and Styled-Components.",
-  image: ogImage.src,
+  image: profile.src,
   url: "https://itsme-subid.vercel.app/",
 };
 
