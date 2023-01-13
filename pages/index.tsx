@@ -245,7 +245,7 @@ const Main = styled.main`
 const og = {
   title: "SUBID DAS",
   describedTitle: "RESUME of SUBID DAS",
-  discription:
+  description:
     "Resume-2023 is a visually stunning resume website built using Next.js, TypeScript, and Styled-Components.",
   image: profile.src,
   url: "https://itsme-subid.vercel.app/",
@@ -255,21 +255,15 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>SUBID DAS</title>
+        <title>{og.title}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="robots"
           content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
         />
-        <meta
-          name="description"
-          content="Resume-2023 is a visually stunning resume website built using Next.js, TypeScript, and Styled-Components."
-        />
-        <meta
-          name="google-site-verification"
-          content="aUOx7BZBGMEAbtDsLf9bN1BvycMZwahF4zDqu0EtQCw"
-        />
+        <meta name="description" content={og.description} />
+        
         <link rel="canonical" href={og.url} />
         <script type="application/ld+json">
           {`
@@ -279,7 +273,7 @@ export default function Home() {
           {
             "@type": "Full-Stack Developer",
             "@id": ${og.url},
-            "name": "SUBID DAS | Resume",
+            "name": ${og.describedTitle},
             "url": ${og.url},
             "sameAs": [
               "https://www.instagram.com/itsme_subid/",
@@ -291,8 +285,8 @@ export default function Home() {
               "inLanguage": "en-US",
               "url": ${og.image},
               "contentUrl": ${og.image},
-              "width": 782,
-              "height": 782,
+              "width": 1000,
+              "height": 1000,
               "caption": "itsme-Subid"
             },
             "image": { "@id": ${og.url} }
@@ -301,12 +295,12 @@ export default function Home() {
             "@type": "WebPage",
             "@id": ${og.url},
             "url": ${og.url},
-            "name": "Next-Academy | itsme-Subid",
+            "name": ${og.describedTitle},
             "isPartOf": {
               "@id": ${og.url}
             },
             "about": { "@id": ${og.url} },
-            "description": "Next-Academy by Subid using next.js",
+            "description": ${og.description},
             "inLanguage": "en-US"
           }
         ]
@@ -314,22 +308,16 @@ export default function Home() {
       `}
         </script>
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="SUBID DAS" />
+        <meta property="og:site_name" content={og.title} />
         <meta property="og:url" content={og.url} />
-        <meta property="og:title" content="RESUME of SUBID DAS" />
-        <meta
-          property="og:description"
-          content="Resume-2023 is a visually stunning resume website built using Next.js, TypeScript, and Styled-Components."
-        />
+        <meta property="og:title" content={og.describedTitle} />
+        <meta property="og:description" content={og.description} />
         <meta property="og:image" content={og.image} />
         <meta property="og:locale" content="en_US" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content={og.url} />
-        <meta property="twitter:title" content="Next-Academy | itsme-Subid" />
-        <meta
-          property="twitter:description"
-          content="Next-Academy by Subid using next.js"
-        />
+        <meta property="twitter:title" content={og.describedTitle} />
+        <meta property="twitter:description" content={og.description} />
         <meta property="twitter:image" content={og.image} />
         <meta name="twitter:site" content="@itsme-Subid" />
         <meta name="twitter:creator" content="@itsme-Subid" />
