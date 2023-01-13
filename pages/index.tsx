@@ -403,13 +403,17 @@ export default function Home() {
               </h2>
               <ul>
                 <li>
-                  <a href="mailto:itsmesubid@gmail.com">
+                  <a
+                    href="mailto:itsmesubid@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <MdMail />
                     <span>itsmesubid@gmail.com</span>
                   </a>
                 </li>
                 <li>
-                  <a href="tele:+918902175210">
+                  <a href="tele:+918902175210" target="_blank" rel="noreferrer">
                     <BsFillPhoneFill />
                     <span>+91 890 217 5210</span>
                   </a>
@@ -421,13 +425,21 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/itsme-Subid">
+                  <a
+                    href="https://github.com/itsme-Subid"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <FaGithub />
                     <span>github.com/itsme-Subid</span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://linkedin.com/in/itsme-subid">
+                  <a
+                    href="https://linkedin.com/in/itsme-subid"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <FaLinkedin />
                     <span>linkedin.com/in/itsme-subid</span>
                   </a>
@@ -466,7 +478,11 @@ export default function Home() {
               </h2>
               <ul>
                 <li>
-                  <a href="https://github.com/WebInRush/WebInRush">
+                  <a
+                    href="https://github.com/WebInRush/WebInRush"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <h3>WebInRush</h3> <span>(12/2022 - Present)</span>
                   </a>
                   <div className="description">
@@ -492,7 +508,11 @@ export default function Home() {
                   </div>
                 </li>
                 <li>
-                  <a href="https://nextacademy.vercel.app/">
+                  <a
+                    href="https://nextacademy.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <h3>Next Academy</h3> <span>(12/2022 - 01/2023)</span>
                   </a>
                   <div className="description">
@@ -514,7 +534,11 @@ export default function Home() {
                   </div>
                 </li>
                 <li>
-                  <a href="https://movie108.vercel.app/">
+                  <a
+                    href="https://movie108.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <h3>Movie108</h3> <span>(10/2022 - 11/2022)</span>
                   </a>
                   <div className="description">
@@ -546,8 +570,7 @@ export default function Home() {
               </h2>
               <ul className="education-list">
                 <li>
-                  <a href="">
-                    {" "}
+                  <a>
                     <h3>Surendranath Vidyaniketan</h3> <span>12th Boards</span>{" "}
                     <span>(09/2021 - Present)</span>
                   </a>
