@@ -24,7 +24,6 @@ const GlobalStyle = createGlobalStyle`
     padding-block: 4rem;
     background-color: rgb(var(--light-color));
     color: rgb(var(--dark-color));
-    min-height: 100vh;
     @media screen and (max-width: 40rem) {
       padding-block: 2rem;
     }
