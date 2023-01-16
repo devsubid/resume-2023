@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
     --primary-color: 251, 195, 27;
     --secondary-color: 0, 122, 163;
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
   ::-webkit-scrollbar {
     width: 0;
@@ -24,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
     padding-block: 4rem;
     background-color: rgb(var(--light-color));
     color: rgb(var(--dark-color));
+    overflow-x: hidden;
     @media screen and (max-width: 40rem) {
       padding-block: 2rem;
     }
