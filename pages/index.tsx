@@ -479,7 +479,7 @@ export default function Home() {
               <ul>
                 <li>
                   <a
-                    href="https://github.com/WebInRush/WebInRush"
+                    href="https://webinrush.vercel.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -488,19 +488,22 @@ export default function Home() {
                   <div className="description">
                     <p>
                       Developed and launched a full-stack web application called
-                      WebInRush using React.js, TypeScript, Styled-Components,
-                      Node.js, Express.js, and MySQL. The platform allows users
-                      to sign up and place orders for custom websites, and
-                      handle all the functionality related to it.
+                      WebInRush using Next.js, TypeScript, Styled-Components,
+                      Formik, NextAuth, Mongoose, and MongoDB. The platform
+                      allows users to sign up and place orders for custom
+                      websites, and talk to the Developers.
                     </p>
                     <div className="skills-used">
                       {[
-                        "React.js",
+                        "Next.js",
                         "TypeScript",
                         "Styled-Components",
-                        "Node.js",
-                        "Express.js",
-                        "MySQL",
+                        "Framer-Motion",
+                        "Material-UI",
+                        "Formik",
+                        "NextAuth",
+                        "Mongoose",
+                        "MongoDB",
                       ].map((skill) => (
                         <span key={skill}>{skill}</span>
                       ))}
@@ -509,27 +512,33 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    href="https://nextacademy.vercel.app/"
+                    href="https://infotech-success-point.vercel.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <h3>Next Academy</h3> <span>(12/2022 - 01/2023)</span>
+                    <h3>Infotech Success Point</h3>{" "}
+                    <span>(12/2022 - 01/2023)</span>
                   </a>
                   <div className="description">
                     <p>
                       Created and designed a responsive front-end web
-                      application for Next Academy using Next.js, TypeScript and
-                      Styled-Components. The platform displays various web
+                      application for Infotech Success Point using Next.js,
+                      TypeScript and Styled-Components, Framer-motion,
+                      Material-UI. The platform displays various web
                       development, web design, and digital marketing courses,
                       offering a visually appealing and user-friendly browsing
                       experience.
                     </p>
                     <div className="skills-used">
-                      {["Next.js", "TypeScript", "Styled-Components"].map(
-                        (skill) => (
-                          <span key={skill}>{skill}</span>
-                        )
-                      )}
+                      {[
+                        "Next.js",
+                        "TypeScript",
+                        "Styled-Components",
+                        "Framer-Motion",
+                        "Material-UI",
+                      ].map((skill) => (
+                        <span key={skill}>{skill}</span>
+                      ))}
                     </div>
                   </div>
                 </li>

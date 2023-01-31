@@ -1,6 +1,7 @@
 import type { AppProps } from "next/app";
 import { Poppins } from "@next/font/google";
 import { createGlobalStyle } from "styled-components";
+import { motion } from "framer-motion";
 
 const GlobalStyle = createGlobalStyle`
   :root{
@@ -50,11 +51,18 @@ const poppins = Poppins({
   subsets: ["latin"],
 });
 
+const container = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1 },
+};
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className={poppins.variable}>
       <GlobalStyle />
-      <Component {...pageProps} />
+      <motion.div variants={container} initial="hidden" animate="show">
+        <Component {...pageProps} />
+      </motion.div>
     </div>
   );
 }
