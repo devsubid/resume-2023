@@ -1,5 +1,5 @@
 import type { AppProps } from "next/app";
-import { Poppins } from "@next/font/google";
+import { Poppins } from "next/font/google";
 import { createGlobalStyle } from "styled-components";
 import { motion } from "framer-motion";
 
