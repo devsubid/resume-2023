@@ -1,33 +1,17 @@
 import Head from "next/head";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import Image from "next/image";
 import profile from "../public/profile.jpg";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdLocationOn, MdMail } from "react-icons/md";
 import { BsFillPhoneFill } from "react-icons/bs";
 
-const animateBefore = keyframes`
-    0%,100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(100vh);
-    }
-`;
-const animateAfter = keyframes`
-    0%,100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-100vh);
-    }
-`;
-
 const Main = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-y: hidden;
   gap: 2rem;
   & .top {
     display: flex;
@@ -68,38 +52,6 @@ const Main = styled.main`
       @media screen and (max-width: 40rem) {
         text-align: justify;
       }
-    }
-    &::before {
-      content: "";
-      position: absolute;
-      top: -20rem;
-      left: -10rem;
-      width: 40rem;
-      height: 40rem;
-      border-radius: 50%;
-      background: radial-gradient(
-        rgba(var(--primary-color), 0.175),
-        transparent,
-        transparent
-      );
-      animation: ${animateBefore} 15s infinite;
-      z-index: -1;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -20rem;
-      right: -10rem;
-      width: 40rem;
-      height: 40rem;
-      border-radius: 50%;
-      background: radial-gradient(
-        rgba(var(--secondary-color), 0.175),
-        transparent,
-        transparent
-      );
-      animation: ${animateAfter} 15s infinite;
-      z-index: -1;
     }
   }
   & .body-content {
@@ -473,6 +425,41 @@ export default function Home() {
             </div>
           </aside>
           <div className="others">
+            <div className="experience">
+              <h2>
+                <span>Experience</span>
+              </h2>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/simmifoundation/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <h3>Simmi Foundation</h3> <span>(01/2023 - Present)</span>
+                  </a>
+                  <div className="description">
+                    <p>
+                    As a Frontend Team Leader Intern and Full Stack Developer Intern, I lead the frontend team and work with tech stacks like React.js, Material UI, and Node.js. My responsibilities include mentoring team members, managing tasks, and ensuring timely project delivery. I am also involved in developing full-stack applications using the MERN stack.
+                    </p>
+                    <div className="skills-used">
+                      {[
+                        "React.js",
+                        "JavaScript",
+                        "CSS Modules",
+                        "Material-UI",
+                        "React Formik",
+                        "Node.js",
+                        "Mongoose",
+                        "MongoDB",
+                      ].map((skill) => (
+                        <span key={skill}>{skill}</span>
+                      ))}
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
             <div className="projects">
               <h2>
                 <span>Projects</span>
