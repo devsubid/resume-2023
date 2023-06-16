@@ -407,7 +407,7 @@ const Home = () => (
           <ul>
             <li>
               <a
-                href="https://infotech-success-point.vercel.app/"
+                href="https://devsubid.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
