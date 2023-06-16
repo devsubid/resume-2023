@@ -556,7 +556,11 @@ const Home = () => (
           </h2>
           <ul className="education-list">
             <li>
-              <a>
+              <a
+                href="https://en.wikipedia.org/wiki/Sheoraphuli_Surendra_Nath_Vidyaniketan"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <h3>Surendranath Vidyaniketan - 12th Boards</h3>
                 <p>(09/2021 - 06/2023)</p>
               </a>
