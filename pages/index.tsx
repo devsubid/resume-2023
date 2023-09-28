@@ -26,7 +26,6 @@ const Main = styled.main`
         object-fit: cover;
         object-position: center;
         border-radius: 1rem;
-        box-shadow: 0 -0.25rem 0.5rem rgba(var(--dark-color), 0.25);
         @media screen and (max-width: 40rem) {
           width: 100%;
           height: 100%;
@@ -253,14 +252,14 @@ const Home = () => (
       </div>
       <div className="dev">
         <h1>SUBID DAS</h1>
-        <h2>Full-Stack Web Developer</h2>
+        <h2>Frontend Developer</h2>
         <p>
-          Experienced Full-Stack Developer proficient in <b>Next.js</b>,{" "}
-          <b>MERN Stack</b>, <b>Prisma</b>, <b>Firebase</b>, and{" "}
-          <b>Framer Motion</b>. Passionate about creating intuitive user
-          interfaces and delivering scalable and performant web applications.
-          Deep understanding of <b>TypeScript</b> and its application in
-          building robust software solutions.
+          Experienced Frontend Developer proficient in <b>Next.js</b>,{" "}
+          <b>Framer Motion</b>, <b>MERN Stack</b>, <b>Prisma</b>, and{" "}
+          <b>Firebase</b>. Passionate about creating intuitive user interfaces
+          and delivering scalable and performant web applications. Deep
+          understanding of <b>TypeScript</b> and its application in building
+          robust software solutions.
         </p>
       </div>
     </div>
@@ -321,10 +320,10 @@ const Home = () => (
           </h2>
           <ul>
             <li>Next.js</li>
+            <li>MERN Stack</li>
+            <li>Framer Motion</li>
             <li>Prisma</li>
             <li>SQL & NoSQL</li>
-            <li>Framer Motion</li>
-            <li>MERN Stack</li>
             <li>Firebase</li>
           </ul>
         </div>
@@ -346,52 +345,197 @@ const Home = () => (
           <ul>
             <li>
               <a
-                href="https://www.linkedin.com/in/devsubid/"
+                href="https://awesomesuite.com/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <h3>Simmi Foundation - Head of Engineering</h3>
-                <p>(01/2023 - 04/2023)</p>
+                <h3>Awesomesuite - ReactJS Developer</h3>
+                <p>(07/2023 - Present)</p>
               </a>
               <div className="description">
                 <ul>
                   <li>
-                    Head of Engineering, Frontend Team Lead, and Full Stack
-                    Developer Intern at Simmi Foundation
+                    Currently working as a ReactJS Developer Intern at
+                    AwesomeSuite, a leading software development company located
+                    in Jaipur, Rajasthan, India, on a remote basis
                   </li>
                   <li>
-                    Promoted from Full Stack Developer to Frontend Team Lead,
-                    and subsequently to Head of Engineering
+                    Actively involved in software development projects, focusing
+                    on building dynamic and responsive web applications
                   </li>
                   <li>
-                    Led the frontend development team, utilizing React.js,
-                    Material UI, and Node.js
+                    Leveraging React.js, I contribute to the creation of
+                    engaging user interfaces, ensuring seamless navigation and a
+                    top-notch user experience
                   </li>
                   <li>
-                    Mentored team members, managed tasks, and ensured timely
-                    project delivery
+                    Proficiently working with Redux to manage state and data
+                    flow, optimizing application performance and data handling
                   </li>
                   <li>
-                    Developed full-stack applications using the MERN stack
+                    Utilizing JavaScript to implement interactive and
+                    user-friendly features that enhance the functionality of web
+                    applications
                   </li>
                   <li>
-                    Collaborated with other teams for effective project
-                    management
+                    Collaborating with cross-functional teams to integrate
+                    RESTful APIs, enabling real-time data retrieval and updates
                   </li>
                   <li>
-                    Fostered a culture of innovation and continuous improvement
+                    Implementing JSS (JavaScript Style Sheets) for efficient and
+                    modular styling, maintaining a consistent and visually
+                    appealing design
+                  </li>
+                  <li>
+                    Currently working on the development of Awesome Social, a
+                    cutting-edge social networking managing platform
+                  </li>
+                  <li>
+                    Adhering to industry best practices and standards in
+                    software development to deliver high-quality solutions.
+                  </li>
+                </ul>
+                <div className="skills-used">
+                  {["JavaScript", "React.js", "Redux", "Sass", "JSS"].map(
+                    (skill) => (
+                      <span key={skill}>{skill}</span>
+                    )
+                  )}
+                </div>
+              </div>
+            </li>
+            <li>
+              <a
+                href="https://infotech-success-point.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h3>
+                  Bharatiya Youth Computer Academy - Web Development Instructor
+                </h3>
+                <p>(04/2023 - Present)</p>
+              </a>
+              <div className="description">
+                <ul>
+                  <li>
+                    Teaching and mentoring students in various aspects of web
+                    development
+                  </li>
+                  <li>
+                    Guiding students to acquire the skills and knowledge needed
+                    for a successful career in the IT sector
+                  </li>
+                  <li>
+                    Offering practical insights and real-world examples to
+                    enhance students&apos; understanding
+                  </li>
+                  <li>
+                    Covering a wide range of topics including HTML, CSS, BEM
+                    (Block, Element, Modifier), Tailwind CSS, Bootstrap,
+                    JavaScript, React.js, Node.js, Firebase, and MongoDB
+                  </li>
+                  <li>
+                    Creating a dynamic and engaging learning environment to
+                    facilitate effective learning
+                  </li>
+                  <li>
+                    Providing individualized support to students to help them
+                    overcome challenges
+                  </li>
+                  <li>
+                    Organizing workshops, coding exercises, and projects to
+                    reinforce learning
+                  </li>
+                  <li>
+                    Evaluating student progress and offering constructive
+                    feedback for improvement
+                  </li>
+                  <li>
+                    Preparing students for job interviews and assisting with job
+                    placement opportunities.
+                  </li>
+                </ul>
+                <div className="skills-used">
+                  {["Teaching", "Mentoring"].map((skill) => (
+                    <span key={skill}>{skill}</span>
+                  ))}
+                </div>
+              </div>
+            </li>
+            <li>
+              <a
+                href="https://infotech-success-point.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h3>Professional Freelancer</h3>
+                <p>(09/2022 - Present)</p>
+              </a>
+              <div className="description">
+                <ul>
+                  <li>
+                    Freelance Web and Mobile Developer, serving numerous clients
+                    in the industry
+                  </li>
+                  <li>
+                    Proficient in a wide range of technologies and tools to
+                    deliver high-quality solutions
+                  </li>
+                  <li>
+                    Specialized in TypeScript, Next.js, React.js, Node.js, and
+                    Firebase for building web and mobile applications
+                  </li>
+                  <li>
+                    Extensive experience in Front-End Development, utilizing
+                    styled-components, Material-UI, and framer-motion for
+                    creating engaging user interfaces
+                  </li>
+                  <li>
+                    Well-versed in Full-Stack Development, with expertise in
+                    server-side development using Express.js and database
+                    management with MongoDB, MySQL, and SQL
+                  </li>
+                  <li>
+                    Skilled in optimizing websites for Search Engine
+                    Optimization (SEO) to improve online visibility
+                  </li>
+                  <li>
+                    Proficiency in HTML5, UIX (User Interface Experience), and
+                    FORMIK for creating interactive and user-friendly designs
+                  </li>
+                  <li>
+                    Version control and collaboration using Git and GitHub
+                  </li>
+                  <li>
+                    Knowledgeable in AJAX, JavaScript, and Cascading Style
+                    Sheets (CSS) for dynamic and responsive web applications
+                  </li>
+                  <li>
+                    Familiarity with popular front-end frameworks like React
+                    Native for mobile app development
+                  </li>
+                  <li>
+                    Experience with Prisma ORM and trpc for efficient data
+                    handling
+                  </li>
+                  <li>
+                    Cloud computing expertise with Google Cloud Platform (GCP).
                   </li>
                 </ul>
                 <div className="skills-used">
                   {[
+                    "React Native",
+                    "Prisma ORM",
+                    "tRPC",
+                    "Google Cloud Platform (GCP)",
+                    "TypeScript",
+                    "Next.js",
                     "React.js",
-                    "JavaScript",
-                    "CSS Modules",
-                    "Material-UI",
-                    "React Formik",
                     "Node.js",
-                    "Mongoose",
-                    "MongoDB",
+                    "Firebase",
+                    "framer-motion",
+                    "SQL/NOSQL",
+                    "Tailwind CSS",
                   ].map((skill) => (
                     <span key={skill}>{skill}</span>
                   ))}
@@ -457,119 +601,6 @@ const Home = () => (
                     <span key={skill}>{skill}</span>
                   ))}
                 </div>
-              </div>
-            </li>
-            <li>
-              <a
-                href="https://youtube-shorts-clone.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <h3>Youtube Shorts Clone</h3>
-                <p>(05/2023 - 06/2023)</p>
-              </a>
-              <div className="description">
-                <ul>
-                  <li>
-                    Youtube Shorts Replication: Visually stunning website
-                    replicating Youtube Shorts feature.
-                  </li>
-                  <li>
-                    Infinite Scroll Implementation: Seamless loading of content
-                    as user scrolls.
-                  </li>
-                  <li>
-                    Next.js, TypeScript, and Styled-Components Integration:
-                    Utilizing and balancing these technologies effectively.
-                  </li>
-                  <li>
-                    Responsive Design: Optimized user experience across
-                    different devices.
-                  </li>
-                </ul>
-                <div className="skills-used">
-                  {["Next.js", "Typescript", "Styled-Components"].map(
-                    (skill) => (
-                      <span key={skill}>{skill}</span>
-                    )
-                  )}
-                </div>
-              </div>
-            </li>
-            <li>
-              <a
-                href="https://webinrush.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <h3>WebInRush</h3>
-                <p>(12/2022 - 02/2023)</p>
-              </a>
-              <div className="description">
-                <ul>
-                  <li>
-                    Developed and launched WebInRush, a full-stack web
-                    application, using Next.js, TypeScript, Styled-Components,
-                    Formik, NextAuth, Mongoose, and MongoDB.
-                  </li>
-                  <li>
-                    Created a user-friendly platform for ordering custom
-                    websites and facilitating seamless communication between
-                    clients and developers.
-                  </li>
-                  <li>
-                    Implemented Next.js for enhanced performance and server-side
-                    rendering, ensuring a smooth and responsive user experience.
-                  </li>
-                  <li>
-                    Utilized TypeScript to improve code maintainability,
-                    scalability, and error detection, resulting in a robust and
-                    reliable application.
-                  </li>
-                  <li>
-                    Integrated Formik for efficient form handling, simplifying
-                    the process of capturing user inputs and validating data.
-                  </li>
-                </ul>
-                <div className="skills-used">
-                  {[
-                    "Next.js",
-                    "TypeScript",
-                    "Styled-Components",
-                    "Framer-Motion",
-                    "Material-UI",
-                    "Formik",
-                    "NextAuth",
-                    "Mongoose",
-                    "MongoDB",
-                  ].map((skill) => (
-                    <span key={skill}>{skill}</span>
-                  ))}
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div className="education">
-          <h2>
-            <span>Education</span>
-          </h2>
-          <ul className="education-list">
-            <li>
-              <a
-                href="https://en.wikipedia.org/wiki/Sheoraphuli_Surendra_Nath_Vidyaniketan"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <h3>Surendranath Vidyaniketan - 12th Boards</h3>
-                <p>(09/2021 - 06/2023)</p>
-              </a>
-              <div className="description">
-                <p>
-                  It{"'"}s a Government school in Kolkata, India. It is
-                  affiliated to the West Bengal Council of Higher Secondary
-                  Education.
-                </p>
               </div>
             </li>
           </ul>
